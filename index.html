@@ -10,92 +10,91 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial, sans-serif;
+font-family:Arial,sans-serif;
 }
 
 body{
-background:#0b1f3a;
-color:white;
+background:#FFD700;
+color:#111;
 }
 
 .hero{
-height:100vh;
-background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
-url('https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=1500&q=80');
-background-size:cover;
-background-position:center;
+min-height:100vh;
 display:flex;
 flex-direction:column;
 justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
+padding:40px;
 }
 
-.hero h1{
-font-size:55px;
-margin-bottom:15px;
-}
-
-.hero p{
-font-size:22px;
-max-width:800px;
-line-height:1.6;
-margin-bottom:25px;
-}
-
-.number{
-font-size:32px;
+.top{
+font-size:18px;
 font-weight:bold;
+letter-spacing:3px;
+margin-bottom:20px;
+}
+
+.title{
+font-size:95px;
+font-weight:900;
+line-height:0.9;
 margin-bottom:25px;
+color:#000;
+}
+
+.desc{
+font-size:22px;
+max-width:650px;
+margin-bottom:30px;
 }
 
 .btn{
 display:inline-block;
-padding:16px 32px;
-margin:10px;
-border-radius:12px;
+background:#000;
+color:white;
+padding:18px 35px;
 text-decoration:none;
+border-radius:12px;
+font-size:22px;
 font-weight:bold;
-font-size:20px;
-transition:.3s;
+margin-bottom:25px;
 }
 
-.whatsapp{
-background:#25D366;
-color:white;
-}
-
-.call{
-background:#e53935;
-color:white;
+.phone{
+font-size:32px;
+font-weight:900;
 }
 
 .services{
-padding:60px 20px;
-background:white;
-color:#222;
-text-align:center;
-}
-
-.services h2{
-font-size:38px;
-margin-bottom:40px;
+background:#111;
+color:white;
+padding:60px 30px;
 }
 
 .card{
-background:#f5f5f5;
-padding:25px;
-border-radius:15px;
-margin:15px auto;
-max-width:700px;
+background:#222;
+padding:20px;
+border-radius:12px;
+margin-bottom:15px;
 font-size:20px;
 }
 
-.footer{
-background:#081527;
-padding:30px;
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+}
+
+footer{
+background:#000;
+color:white;
 text-align:center;
+padding:20px;
 }
 </style>
 </head>
@@ -104,53 +103,49 @@ text-align:center;
 
 <section class="hero">
 
-<h1>🚛 KARROTREC KLODI</h1>
-
-<p>
-Transport i sigurt 24/7 në të gjithë Shqipërinë.
-Tërheqje automjetesh, ndihmë në rrugë,
-transport mjetesh dhe shërbim i shpejtë kudo.
-</p>
-
-<div class="number">
-📞 +355 69 633 7750
+<div class="top">
+TRANSPORT I SIGURT 24/7 NË SHQIPËRI
 </div>
 
-<a class="btn whatsapp" href="https://wa.me/355696337750">
-WhatsApp
+<div class="title">
+KARROTREC<br>
+KLODI
+</div>
+
+<div class="desc">
+Shërbim profesional karrotreku në të gjithë Shqipërinë.
+Transport automjetesh, ndihmë në rrugë dhe shërbim 24 orë.
+</div>
+
+<a class="btn" href="tel:+355696337750">
+KONTAKTO TANI
 </a>
 
-<a class="btn call" href="tel:+355696337750">
-Telefono Tani
-</a>
+<div class="phone">
+📞 +355 69 633 7750
+</div>
 
 </section>
 
 <section class="services">
 
-<h2>Shërbimet Tona</h2>
+<div class="card">🚛 Karrotrek 24/7</div>
 
-<div class="card">
-🚗 Tërheqje automjetesh 24/7
-</div>
+<div class="card">🚗 Transport Automjetesh</div>
 
-<div class="card">
-🛻 Transport mjetesh në të gjithë Shqipërinë
-</div>
+<div class="card">🛠️ Ndihmë në Rrugë</div>
 
-<div class="card">
-⚡ Ndihmë emergjente në rrugë
-</div>
-
-<div class="card">
-🔒 Shërbim i sigurt dhe profesional
-</div>
+<div class="card">🇦🇱 Shërbim në të gjithë Shqipërinë</div>
 
 </section>
 
-<section class="footer">
-© 2026 Karrotrec Klodi - Shërbim 24/7
-</section>
+<footer>
+© KARROTREC KLODI
+</footer>
+
+<a class="whatsapp" href="https://wa.me/355696337750">
+WhatsApp
+</a>
 
 </body>
 </html>
