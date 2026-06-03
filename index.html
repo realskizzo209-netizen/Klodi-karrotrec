@@ -3,148 +3,271 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Karrotrec Klodi</title>
+<title>Karrotrec Klodi Shkodër</title>
 
 <style>
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 body{
-background:#FFD700;
-color:#111;
+    background:#fff;
+    color:#222;
 }
 
-.hero{
-min-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-padding:40px;
+header{
+    background:#fff;
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:3px solid #f3c400;
 }
 
-.top{
-font-size:18px;
-font-weight:bold;
-letter-spacing:3px;
-margin-bottom:20px;
+.logo{
+    font-size:50px;
+    font-weight:900;
+    color:#f3c400;
+    line-height:1;
 }
 
-.title{
-font-size:95px;
-font-weight:900;
-line-height:0.9;
-margin-bottom:25px;
-color:#000;
-}
-
-.desc{
-font-size:22px;
-max-width:650px;
-margin-bottom:30px;
-}
-
-.btn{
-display:inline-block;
-background:#000;
-color:white;
-padding:18px 35px;
-text-decoration:none;
-border-radius:12px;
-font-size:22px;
-font-weight:bold;
-margin-bottom:25px;
+.logo span{
+    display:block;
+    font-size:18px;
+    color:#000;
+    letter-spacing:5px;
 }
 
 .phone{
-font-size:32px;
-font-weight:900;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.hero{
+    height:80vh;
+    background:url("hero.jpg") center center/cover no-repeat;
+    position:relative;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.45);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.hero-content{
+    text-align:center;
+    color:white;
+}
+
+.hero-content h1{
+    font-size:70px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:24px;
 }
 
 .services{
-background:#111;
-color:white;
-padding:60px 30px;
+    background:#f3c400;
+    color:white;
+    padding:80px 20px;
+    text-align:center;
 }
 
-.card{
-background:#222;
-padding:20px;
-border-radius:12px;
-margin-bottom:15px;
-font-size:20px;
+.services h2{
+    font-size:60px;
+    margin-bottom:30px;
 }
 
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-padding:15px 20px;
-border-radius:50px;
-text-decoration:none;
-font-weight:bold;
+.services p{
+    font-size:24px;
+    max-width:900px;
+    margin:auto;
+}
+
+.about{
+    padding:80px 20px;
+    max-width:1200px;
+    margin:auto;
+}
+
+.about h2{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.about p{
+    font-size:24px;
+    line-height:1.8;
+}
+
+.list{
+    margin-top:30px;
+}
+
+.list li{
+    font-size:22px;
+    margin-bottom:15px;
+}
+
+.gallery{
+    padding:80px 20px;
+    background:#f7f7f7;
+}
+
+.gallery h2{
+    text-align:center;
+    font-size:50px;
+    margin-bottom:40px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.grid img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.contact{
+    padding:80px 20px;
+    text-align:center;
+}
+
+.contact h2{
+    font-size:50px;
+    margin-bottom:30px;
+}
+
+.contact p{
+    font-size:24px;
+    margin-bottom:15px;
 }
 
 footer{
-background:#000;
-color:white;
-text-align:center;
-padding:20px;
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    width:70px;
+    height:70px;
+    background:#25D366;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-decoration:none;
+    font-size:35px;
+    box-shadow:0 0 15px rgba(0,0,0,.3);
 }
 </style>
 </head>
 
 <body>
 
+<header>
+    <div class="logo">
+        KLODI
+        <span>KARROTREC</span>
+    </div>
+
+    <div class="phone">
+        +355 69 633 7750
+    </div>
+</header>
+
 <section class="hero">
-
-<div class="top">
-TRANSPORT I SIGURT 24/7 NË SHQIPËRI
-</div>
-
-<div class="title">
-KARROTREC<br>
-KLODI
-</div>
-
-<div class="desc">
-Shërbim profesional karrotreku në të gjithë Shqipërinë.
-Transport automjetesh, ndihmë në rrugë dhe shërbim 24 orë.
-</div>
-
-<a class="btn" href="tel:+355696337750">
-KONTAKTO TANI
-</a>
-
-<div class="phone">
-📞 +355 69 633 7750
-</div>
-
+    <div class="overlay">
+        <div class="hero-content">
+            <h1>KARROTREC KLODI 24/7</h1>
+            <p>Shërbim karrotreci brenda dhe jashtë Shqipërisë</p>
+        </div>
+    </div>
 </section>
 
 <section class="services">
+    <h2>KARROTREC KLODI</h2>
 
-<div class="card">🚛 Karrotrek 24/7</div>
+    <p>
+        Evakuim dhe transport automjetesh, mjete pune,
+        traktorë dhe mjete të tonazhit të rëndë 24 orë në ditë.
+    </p>
+</section>
 
-<div class="card">🚗 Transport Automjetesh</div>
+<section class="about">
 
-<div class="card">🛠️ Ndihmë në Rrugë</div>
+    <h2>Miresevini ne Karrotrec Klodi</h2>
 
-<div class="card">🇦🇱 Shërbim në të gjithë Shqipërinë</div>
+    <p>
+        Çdo shofer gjatë udhëtimit mund të përballet me një problem
+        në rrugë. Karrotrec Klodi ofron ndihmë profesionale 24/7
+        në Shqipëri dhe jashtë saj.
+    </p>
+
+    <ul class="list">
+        <li>✔ Shërbim për aksidente dhe defekte automjetesh</li>
+        <li>✔ Transport automjetesh deri në 15 ton</li>
+        <li>✔ Transport traktorësh dhe makinerish</li>
+        <li>✔ Ngritje me vinç</li>
+        <li>✔ Transport në Kosovë, Mal të Zi, Maqedoni, Kroaci dhe BE</li>
+        <li>✔ Ndihmë rrugore 24/7</li>
+    </ul>
+
+</section>
+
+<section class="gallery">
+
+    <h2>Galeria</h2>
+
+    <div class="grid">
+        <img src="galeria1.jpg" alt="">
+        <img src="galeria2.jpg" alt="">
+        <img src="galeria3.jpg" alt="">
+        <img src="galeria4.jpg" alt="">
+        <img src="galeria5.jpg" alt="">
+        <img src="galeria6.jpg" alt="">
+    </div>
+
+</section>
+
+<section class="contact">
+
+    <h2>Kontaktoni</h2>
+
+    <p>📞 +355 69 633 7750</p>
+    <p>📞 +355 69 555 5787</p>
+    <p>📍 Shkodër, Shqipëri</p>
+    <p>WhatsApp & Viber 24/7</p>
 
 </section>
 
 <footer>
-© KARROTREC KLODI
+    © 2025 Karrotrec Klodi Shkodër
 </footer>
 
 <a class="whatsapp" href="https://wa.me/355696337750">
-WhatsApp
+☎
 </a>
 
 </body>
