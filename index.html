@@ -3,270 +3,446 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Karrotrec Klodi Shkodër</title>
+<title>Karrotrec Klodi Shkodër | Ndihmë Rrugore 24/7</title>
+
+<meta name="description" content="Karrotrec Klodi Shkodër. Transport automjetesh, ndihmë rrugore 24/7, transport traktorësh dhe makinerish në Shqipëri dhe Europë.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
+
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
 }
 
 body{
-    background:#fff;
-    color:#222;
+background:#fff;
+color:#222;
 }
 
 header{
-    background:#fff;
-    padding:20px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    border-bottom:3px solid #f3c400;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:#111;
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
 }
 
 .logo{
-    font-size:50px;
-    font-weight:900;
-    color:#f3c400;
-    line-height:1;
+font-size:32px;
+font-weight:800;
+color:#f7c600;
 }
 
 .logo span{
-    display:block;
-    font-size:18px;
-    color:#000;
-    letter-spacing:5px;
+color:white;
 }
 
-.phone{
-    font-size:28px;
-    font-weight:bold;
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-weight:500;
+}
+
+nav a:hover{
+color:#f7c600;
 }
 
 .hero{
-    height:80vh;
-    background:url("hero.jpg") center center/cover no-repeat;
-    position:relative;
+height:100vh;
+background:url('hero.jpg') center center/cover no-repeat;
+position:relative;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
 }
 
-.overlay{
-    position:absolute;
-    width:100%;
-    height:100%;
-    background:rgba(0,0,0,0.45);
-    display:flex;
-    align-items:center;
-    justify-content:center;
+.hero::before{
+content:'';
+position:absolute;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.65);
 }
 
 .hero-content{
-    text-align:center;
-    color:white;
+position:relative;
+color:white;
+max-width:900px;
+padding:20px;
 }
 
 .hero-content h1{
-    font-size:70px;
-    margin-bottom:20px;
+font-size:70px;
+font-weight:800;
+margin-bottom:15px;
 }
 
 .hero-content p{
-    font-size:24px;
+font-size:22px;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:#f7c600;
+color:#111;
+font-weight:700;
+text-decoration:none;
+border-radius:50px;
+margin:10px;
+}
+
+.btn:hover{
+transform:translateY(-2px);
+}
+
+.stats{
+padding:80px 8%;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+background:#f7c600;
+}
+
+.stat{
+text-align:center;
+}
+
+.stat h2{
+font-size:45px;
+}
+
+.stat p{
+font-size:18px;
+}
+
+.section{
+padding:100px 8%;
+}
+
+.section-title{
+text-align:center;
+font-size:45px;
+margin-bottom:20px;
+font-weight:800;
+}
+
+.section-sub{
+text-align:center;
+max-width:800px;
+margin:auto;
+margin-bottom:50px;
+color:#666;
 }
 
 .services{
-    background:#f3c400;
-    color:white;
-    padding:80px 20px;
-    text-align:center;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
 }
 
-.services h2{
-    font-size:60px;
-    margin-bottom:30px;
+.card{
+background:#fff;
+padding:30px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.3s;
 }
 
-.services p{
-    font-size:24px;
-    max-width:900px;
-    margin:auto;
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card h3{
+margin-bottom:15px;
+color:#f7c600;
 }
 
 .about{
-    padding:80px 20px;
-    max-width:1200px;
-    margin:auto;
+background:#111;
+color:white;
 }
 
-.about h2{
-    font-size:55px;
-    margin-bottom:20px;
+.about-wrap{
+max-width:1000px;
+margin:auto;
+text-align:center;
 }
 
-.about p{
-    font-size:24px;
-    line-height:1.8;
-}
-
-.list{
-    margin-top:30px;
-}
-
-.list li{
-    font-size:22px;
-    margin-bottom:15px;
+.about-wrap p{
+line-height:1.8;
+font-size:18px;
 }
 
 .gallery{
-    padding:80px 20px;
-    background:#f7f7f7;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
 }
 
-.gallery h2{
-    text-align:center;
-    font-size:50px;
-    margin-bottom:40px;
-}
-
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:20px;
-}
-
-.grid img{
-    width:100%;
-    height:300px;
-    object-fit:cover;
-    border-radius:10px;
+.gallery img{
+width:100%;
+height:260px;
+object-fit:cover;
+border-radius:12px;
 }
 
 .contact{
-    padding:80px 20px;
-    text-align:center;
+background:#f5f5f5;
+text-align:center;
 }
 
-.contact h2{
-    font-size:50px;
-    margin-bottom:30px;
+.contact-box{
+max-width:700px;
+margin:auto;
 }
 
-.contact p{
-    font-size:24px;
-    margin-bottom:15px;
+.contact-box h3{
+font-size:30px;
+margin-bottom:20px;
+}
+
+.contact-box p{
+font-size:20px;
+margin-bottom:10px;
 }
 
 footer{
-    background:#111;
-    color:white;
-    text-align:center;
-    padding:25px;
+background:#111;
+color:white;
+text-align:center;
+padding:25px;
 }
 
 .whatsapp{
-    position:fixed;
-    bottom:20px;
-    right:20px;
-    width:70px;
-    height:70px;
-    background:#25D366;
-    border-radius:50%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    color:white;
-    text-decoration:none;
-    font-size:35px;
-    box-shadow:0 0 15px rgba(0,0,0,.3);
+position:fixed;
+right:20px;
+bottom:20px;
+width:70px;
+height:70px;
+border-radius:50%;
+background:#25D366;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:32px;
+text-decoration:none;
+color:white;
+box-shadow:0 10px 25px rgba(0,0,0,.3);
 }
+
+@media(max-width:768px){
+
+.hero-content h1{
+font-size:42px;
+}
+
+.hero-content p{
+font-size:18px;
+}
+
+nav{
+display:none;
+}
+
+.section-title{
+font-size:34px;
+}
+
+}
+
 </style>
 </head>
 
 <body>
 
 <header>
-    <div class="logo">
-        KLODI
-        <span>KARROTREC</span>
-    </div>
 
-    <div class="phone">
-        +355 69 633 7750
-    </div>
+<div class="logo">
+KLODI <span>KARROTREC</span>
+</div>
+
+<nav>
+<a href="#sherbime">Shërbimet</a>
+<a href="#rreth">Rreth Nesh</a>
+<a href="#galeri">Galeria</a>
+<a href="#kontakt">Kontakt</a>
+</nav>
+
 </header>
 
 <section class="hero">
-    <div class="overlay">
-        <div class="hero-content">
-            <h1>KARROTREC KLODI 24/7</h1>
-            <p>Shërbim karrotreci brenda dhe jashtë Shqipërisë</p>
-        </div>
-    </div>
-</section>
 
-<section class="services">
-    <h2>KARROTREC KLODI</h2>
+<div class="hero-content">
 
-    <p>
-        Evakuim dhe transport automjetesh, mjete pune,
-        traktorë dhe mjete të tonazhit të rëndë 24 orë në ditë.
-    </p>
-</section>
+<h1>KARROTREC KLODI SHKODËR</h1>
 
-<section class="about">
+<p>
+Ndihmë rrugore, transport automjetesh,
+traktorësh dhe makinerish 24/7
+në Shqipëri dhe Europë.
+</p>
 
-    <h2>Miresevini ne Karrotrec Klodi</h2>
+<a href="tel:+355696337750" class="btn">📞 Telefono Tani</a>
 
-    <p>
-        Çdo shofer gjatë udhëtimit mund të përballet me një problem
-        në rrugë. Karrotrec Klodi ofron ndihmë profesionale 24/7
-        në Shqipëri dhe jashtë saj.
-    </p>
+<a href="https://wa.me/355696337750" class="btn">
+WhatsApp
+</a>
 
-    <ul class="list">
-        <li>✔ Shërbim për aksidente dhe defekte automjetesh</li>
-        <li>✔ Transport automjetesh deri në 15 ton</li>
-        <li>✔ Transport traktorësh dhe makinerish</li>
-        <li>✔ Ngritje me vinç</li>
-        <li>✔ Transport në Kosovë, Mal të Zi, Maqedoni, Kroaci dhe BE</li>
-        <li>✔ Ndihmë rrugore 24/7</li>
-    </ul>
+</div>
 
 </section>
 
-<section class="gallery">
+<section class="stats">
 
-    <h2>Galeria</h2>
+<div class="stat">
+<h2>24/7</h2>
+<p>Shërbim i pandërprerë</p>
+</div>
 
-    <div class="grid">
-        <img src="galeria1.jpg" alt="">
-        <img src="galeria2.jpg" alt="">
-        <img src="galeria3.jpg" alt="">
-        <img src="galeria4.jpg" alt="">
-        <img src="galeria5.jpg" alt="">
-        <img src="galeria6.jpg" alt="">
-    </div>
+<div class="stat">
+<h2>100%</h2>
+<p>Transport i sigurt</p>
+</div>
+
+<div class="stat">
+<h2>Shqipëri</h2>
+<p>Dhe Europë</p>
+</div>
+
+<div class="stat">
+<h2>365</h2>
+<p>Ditë në vit</p>
+</div>
 
 </section>
 
-<section class="contact">
+<section class="section" id="sherbime">
 
-    <h2>Kontaktoni</h2>
+<h2 class="section-title">Shërbimet Tona</h2>
 
-    <p>📞 +355 69 633 7750</p>
-    <p>📞 +355 69 555 5787</p>
-    <p>📍 Shkodër, Shqipëri</p>
-    <p>WhatsApp & Viber 24/7</p>
+<p class="section-sub">
+Zgjidhje profesionale për çdo situatë në rrugë.
+</p>
+
+<div class="services">
+
+<div class="card">
+<h3>Karrotrec Automjetesh</h3>
+<p>Transport i sigurt për çdo lloj automjeti.</p>
+</div>
+
+<div class="card">
+<h3>Pas Aksidenteve</h3>
+<p>Ndërhyrje e shpejtë dhe transport i menjëhershëm.</p>
+</div>
+
+<div class="card">
+<h3>Transport Traktorësh</h3>
+<p>Transport profesional për mjete bujqësore.</p>
+</div>
+
+<div class="card">
+<h3>Makineri Pune</h3>
+<p>Transport makinerish ndërtimi dhe industriale.</p>
+</div>
+
+<div class="card">
+<h3>Ndihmë Rrugore</h3>
+<p>Shërbim 24 orë në ditë, 7 ditë në javë.</p>
+</div>
+
+<div class="card">
+<h3>Transport Europian</h3>
+<p>Shqipëri, Kosovë, Mali i Zi dhe Europë.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section about" id="rreth">
+
+<div class="about-wrap">
+
+<h2 class="section-title">Karrotrec Klodi</h2>
+
+<p>
+
+Kur ndodh një defekt apo aksident,
+ju duhet një partner i besueshëm.
+Karrotrec Klodi ofron shërbim të shpejtë,
+transport profesional dhe korrektësi maksimale.
+
+Me eksperiencë në transportin e automjeteve,
+traktorëve dhe makinerive të rënda,
+garantojmë siguri në çdo kilometër.
+
+</p>
+
+</div>
+
+</section>
+
+<section class="section" id="galeri">
+
+<h2 class="section-title">Galeria</h2>
+
+<div class="gallery">
+
+<img src="galeria1.jpg">
+<img src="galeria2.jpg">
+<img src="galeria3.jpg">
+<img src="galeria4.jpg">
+<img src="galeria5.jpg">
+<img src="galeria6.jpg">
+
+</div>
+
+</section>
+
+<section class="section contact" id="kontakt">
+
+<div class="contact-box">
+
+<h2 class="section-title">Kontaktoni Tani</h2>
+
+<h3>📞 069 633 7750</h3>
+
+<p>📞 069 555 5787</p>
+
+<p>📍 Shkodër, Shqipëri</p>
+
+<p>WhatsApp & Viber 24/7</p>
+
+</div>
 
 </section>
 
 <footer>
-    © 2025 Karrotrec Klodi Shkodër
+
+© 2025 Karrotrec Klodi Shkodër
+
 </footer>
 
-<a class="whatsapp" href="https://wa.me/355696337750">
+<a href="https://wa.me/355696337750" class="whatsapp">
 ☎
 </a>
 
